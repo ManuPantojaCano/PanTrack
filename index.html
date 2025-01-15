@@ -1,33 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        #startButton {
-            padding: 10px 20px;
-            color: white;
-            background: green;
-            border: none;
-            cursor: pointer;
-        }
-
-            #startButton.stop {
-                background: red;
-            }
-    </style>
+    <title>Notion Tracker</title>
+    <script src="tracker.js" defer></script>
 </head>
 <body>
-    <h1>Time Tracker</h1>
-    <label for="projectName">Nombre de proyecto:</label>
-    <input type="text" id="projectName" placeholder="Introduce un nombre">
-    <button id="startButton">Start Tracking</button>
-    <script src="tracker.js"></script>
+    <h1>Notion Tracker</h1>
+    <div id="output"></div> <!-- Este será el contenedor para mostrar el texto -->
+    <button id="add-text-btn">Añadir texto</button>
 </body>
 </html>
